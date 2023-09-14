@@ -31,4 +31,74 @@ ul{
     gap: 80px;
 
 }
+section{
+    display: flex;
+    padding-right: 5rem;
+    margin-top: 5rem;
+}
+section div{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo"
+                         "texto texto texto"
+                         "boton1 boton2 boton2";
+    padding-top: 5rem;
+    padding-left: 5rem;
+    justify-content: center;
+}
+#tituloPortada{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    
+}
+#textoPortada{
+    grid-area: texto;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+#boton1{
+    grid-area: boton1;
+    padding-left: 5rem;
+   
+}
+#boton1 h5{
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(113, 149, 202);
+    padding: 1.5rem;
+    width: 10rem;
+    border-color: black;
+    border-radius: 15%;
+}
+#boton2{
+    grid-area: boton2;
+    
+}
+#boton2 h5{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(113, 149, 202);
+    padding: 1.5rem;
+    width: 10rem;
+    border-color: black;
+    border-radius: 15%;
+}
 
+#textoNosotros{
+    padding: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+#textoNosotros p{
+    width: 50rem;
+}
+section img{
+    height: 40rem;
+    padding-right: 10rem;
+}
