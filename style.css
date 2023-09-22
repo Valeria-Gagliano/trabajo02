@@ -1,104 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;600;800&display=swap');
+
+:root{
+    /* Backgrounds colors */
+    --background: #02050e;
+    --background2: rgb(241, 238, 228);
+    --primary: #1e50ff;
+    --secondary: #6882af;
+
+    /* Text colors */
+    --text-white: #dce0e6;
+    --text-gray: #102a44;
+
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#logo {
-    height: 50px;
-}
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    padding: 1 rem;
-    height: 80px;
-}
-
-ul a{
-    color: blue;
+    font-family: 'Mukta', sans-serif;
     text-decoration: none;
-}
-
-ul{
-    list-style: none;
-    display: flex;
-    gap: 80px;
-
-}
-section{
-    display: flex;
-    padding-right: 5rem;
-    margin-top: 5rem;
-}
-section div{
-    display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr;
-    grid-template-areas: "titulo titulo titulo"
-                         "texto texto texto"
-                         "boton1 boton2 boton2";
-    padding-top: 5rem;
-    padding-left: 5rem;
-    justify-content: center;
-}
-#tituloPortada{
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
     
 }
-#textoPortada{
-    grid-area: texto;
-    margin-right: 7rem;
-    margin-left: 7rem;
+header{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    font-size: 1.3rem;
-}
-#boton1{
-    grid-area: boton1;
-    padding-left: 5rem;
-   
-}
-#boton1 h5{
-    display: flex;
-    justify-content: center;
-    background-color:  rgb(113, 149, 202);
-    padding: 1.5rem;
-    width: 10rem;
-    border-color: black;
-    border-radius: 15%;
-}
-#boton2{
-    grid-area: boton2;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+    padding: 0px 30px;
+    gap: 14rem;
     
-}
-#boton2 h5{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(113, 149, 202);
-    padding: 1.5rem;
-    width: 10rem;
-    border-color: black;
-    border-radius: 15%;
+
+    background: var(--secondary);
 }
 
+.logo {
+    height: 3rem;
+}
+
+.navbar, .navbarList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.navbar {
+    gap: 8rem;
+}
+.navbarList{
+    gap: 2rem;
+    list-style-type: none;
+}
+.navbarList a{
+    color: var(--text-gray);
+    font-size: 16px;
+    font-weight: 600;
+}
+.navbarList li:first-child>a {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 18px;
+}
+.cartIcon {
+    height: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    color: var(--text-grayWhite);
+
+}
+main{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    width: 100%;
+    gap: 8rem;
+}
+
+
+/*Hero Section*/
+#Hero{
+    margin-top: 6rem;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.heroInfo{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+    gap: 2rem;
+}
+
+.heroInfo h1{
+    font-size: 48px;
+    width: 80%;
+    font-weight: 800;
+    min-width: 500px;
+}
+
+.heroInfo p{
+    font-size: 16px;
+    width: 75%;
+    color: var(--text-white);
+}
+
+.heroInfo a{
+    
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--text-white);
+    background-color: var(--primary);
+    padding: 0.5rem;
+    font-weight: 600;
+    width: 150px;
+    text-align: center;
+    
+}
+
+.heroInfo div{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#Hero img{
+    height: 30rem;
+    background-color: #222738;
+    padding: 0.4rem;
+    border-radius: 30px;
+}
+
+/*Section Nosotros*/
 #textoNosotros{
-    padding: 5rem;
+    padding: 1rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    background-color: var(--text-white);
+    color: #02050e;
+    border-radius: 20px;
+    border-color: #36d3df;
+    border-style: solid;
+    border-width: 0.35rem;
 }
 #textoNosotros p{
     width: 50rem;
 }
-section img{
-    height: 40rem;
-    padding-right: 10rem;
+
+/*Section Cards*/
+.cardsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background2);
+    width: 100%;
+    height: 800px;
+    gap: 2.5rem;
+    color: var(--text-gray);
+
+}
+
+.cardsSection h3{
+    font-size: 3rem;
+    
+}
+
+.cardList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8rem;
+}
+
+.card{
+    color: var(--text-white);
+    background-color: var(--secondary);
+    width: 280px;
+    padding: 2rem 0.5rem;
+    gap: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+}
+
+.card p:last-child{
+    font-size: 16px;
+    font-weight: 300;
+}
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+    background-color: var(--background);
+    padding: 2rem 0;
+    color: var(--text-white);
+    gap: 20rem;
+}
+
+.infoNegocio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.infoNegocio img{
+    height: 8rem;
+    border-radius: 20px;
+}
+
+.redesSociales img{
+    height: 40px;
+}
+.dudas{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto li{
+    list-style-type: disc;
+    list-style: var(--text-white);
 }

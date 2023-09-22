@@ -7,32 +7,79 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <img id="logo" src="imagenes/logoGaelecMaterElec.png" alt="logo empresa Gaelec">
-        <ul class="nav">
-            <li class="nav__link"><a href="#">Inicio</a></li>
-            <li class="nav__link"><a href="#">Nosotros</a></li>
-            <li class="nav__link"><a href="#">Productos</a></li>
-            <li class="nav__link"><a href="#">Contactos</a></li>
-        </ul>
-    </nav>
-    <section>
-        <div>
-            <h3 id="tituloPortada">Gaelec Materiales Electricos</h3>
-            <p id="textoPortada">En nuestra tienda online podes encontrar todos los materiales electricos, que necesitas para la remodelacion o contruccion de tu hogar. Ademas contamos con una seccion dedicada a la iluminacion y decoracion de jardines, para ponerle onda a tus espacios.</p>
-            <div id="boton1">
-                <h5>Mas informacion</h5>
+    <header>
+        <img class="logo" src="imagenes/logoGaelecMaterElec.png" alt="logo empresa Gaelec">
+        <nav class="navbar">
+            <ul class="navbarList">
+                <li class="nav__link"><a href="#">Inicio</a></li>
+                <li class="nav__link"><a href="#">Nosotros</a></li>
+                <li class="nav__link"><a href="#">Productos</a></li>
+                <li class="nav__link"><a href="#">Contactos</a></li>
+            </ul>
+            <img src="./imagenes/carro.png" alt="Carro de compras" class="cartIcon">
+        </nav>
+    </header>
+    
+    <main>
+        <!--HERO-->
+        <section id="Hero">
+            <div class="heroInfo">
+                <h1>Gaelec Materiales Electricos</h1>
+                <p >En nuestra tienda online podes encontrar todos los materiales electricos, que necesitas para la remodelacion o contruccion de tu hogar. Ademas contamos con una seccion dedicada a la iluminacion y decoracion de jardines, para ponerle onda a tus espacios.</p>
+                <div>
+                    <a href="">Mas informacion</a>
+                    <a href="">Whatsapp</a>
+                </div>
             </div>
-            <div id="boton2">
-                <h5>Whatsapp</h5>
+            <img src="imagenes/Diseño sin título (12).png" alt="Balcon con guirnaldas Aurora">
+        </section>
+        <div id="textoNosotros">
+            <p>
+               GAELEC es una empresa dedicada a la comercializacion y distribucion de materiales electricos, ubicada en la provincia de Mendoza. Nos destacamos por la gran variedad de productos al mejor precio de mercado. 
+            </p>
+        </div>
+        <section class="cardsSection">
+            <h3>Nuestros Beneficios</h3>
+            <p>¿Porque deberias comprar con nosotros?</p>
+            <div class="cardList">
+                <div class="card">
+                    <img src="./imagenes/Beneficios/calidad.png" alt="Icono de Garantia de Calidad">
+                    <p>Calidad 100% Garantizada</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus et iusto vero?</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/Beneficios/envios.png" alt="Icono Camion de envios">
+                    <p>Envios Gratis</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit natus harum doloribus eius.</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/Beneficios/fabrica.png" alt="Icono de fabrica">
+                    <p>Garantia de Fabrica</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim vel unde  velit modi animi!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="infoNegocio">
+            <img src="./imagenes/Logo GAELEC rectangular con fondo azul-06-06.jpg" alt="Logo Gaelec Materiales Electricos">
+            <p>Valentin Alsina, Dorrego Guaymallen Mendoza.</p>
+            <div class="redesSociales">
+                <img src="./imagenes/Redes/facebook.png" alt="Logo de Facebook">
+                <img src="./imagenes/Redes/Instagram.png" alt="Logo de Instagram">
+                <img src="./imagenes/Redes/Twitter.png" alt="Logo de Twitter">
             </div>
         </div>
-        <img src="imagenes/Diseño sin título (12).png" alt="Balcon con guirnaldas Aurora">
-    </section>
-    <div id="textoNosotros">
-        <p>
-           GAELEC es una empresa dedicada a la comercializacion y distribucion de materiales electricos, ubicada en la provincia de Mendoza. Nos destacamos por la gran variedad de productos al mejor precio de mercado. 
-        </p>
-    </div>
+        <div class="dudas">
+            <h5>¿Necesitas Ayuda?</h5>
+            <ul class="contacto">
+                <li>Sobre Nosotros</li>
+                <li>Contactenos</li>
+                <li>Politicas de Devoluciones</li>
+                <li>Politicas de Privacidad</li>
+                <li>Politicas de Pagos</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
